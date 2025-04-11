@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Sammy</title>
+</head>
+<body>
+  <div id="main-container">
+    <!-- Bagian Logo -->
+    <div id="logo-container">
+      <div id="text-logo-container">
+        <span id="text-logo">Sammy's Personal Web</span>
+      </div>
+      <div id="slogan-container">
+        <span id="slogan">Lorem Ipsum Dolor Sit Amet</span>
+      </div>
+    </div>
+    <!-- Bagian Download -->
+    <div id="download-container">
+      <div class="button-container">
+        <button id="a" class="buttons" onclick="a()">tombol1</button>
+        <button id="b" class="buttons" onclick="b()">tombol2</button>
+        <button id="c" class="buttons" onclick="c()">tombol3</button>
+    </div>
+  </div>
+  </div>
+  
+  <!-- Navbar Mengambang (Floating Navbar) -->
+  <div class="floating-nav" id="myFloatingNav">
+    <a href="/index.html">Home</a>
+    <a href="/aboutme.html">About Me</a>
+    <a href="/cats.html">Cats</a>
+    <a class="active" href="#">Chocolates</a>
+    <a href="/colonthree.html">:3</a>
+    <a href="/pl1.html">Placeholder</a>
+    <a href="/404.html">NotFound</a>
+  </div>
+  
+  <script>
+    // Fungsi tombol aksi
+    function a() {
+      window.open("/");
+    }
+    function b() {
+      window.open("/");
+    }
+    function c() {
+      window.location.href = "/";
+    }
+    
+    // Fungsi untuk toggle responsive navbar (jika diperlukan)
+    function toggleNav() {
+      var nav = document.getElementById("myFloatingNav");
+      if (nav.className === "floating-nav") {
+        nav.className += " responsive";
+      } else {
+        nav.className = "floating-nav";
+      }
+    }
+  </script>
+</body>
+</html>
