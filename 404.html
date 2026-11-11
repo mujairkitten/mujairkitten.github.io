@@ -4,69 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
-  
-  <title>Sammy</title>
+  <title>Page not found - mujairkitten</title>
 </head>
 <body>
-  <div id="main-container">
+  <main id="main-container">
     <!-- Bagian Logo -->
     <div id="logo-container">
       <div id="text-logo-container">
-        <span id="text-logo">Sammy's Personal Web</span>
+        <span id="text-logo">mujairkitten</span>
       </div>
       <div id="slogan-container">
-        <span id="slogan">Lorem Ipsum Dolor Sit Amet</span>
+        <span id="slogan">Home base for Carotene, Machitan, Hayatab, and whatever I'm playing.</span>
       </div>
     </div>
-    <!-- Bagian Download -->
-    <div id="download-container">
+    <!-- Bagian Not Found -->
+    <div class="page-content">
+      <h1>Page not found</h1>
+      <p>This address doesn't lead anywhere. The page may have moved, or the link may be mistyped.</p>
       <div class="button-container">
-        <button id="a" class="buttons" onclick="a()">tombol1</button>
-        <button id="b" class="buttons" onclick="b()">tombol2</button>
-        <button id="c" class="buttons" onclick="c()">tombol3</button>
+        <a class="buttons" href="index.html">Back home</a>
+      </div>
     </div>
-  </div>
-  </div>
-  
+  </main>
+
   <!-- Navbar Mengambang (Floating Navbar) -->
-  <div class="floating-nav" id="myFloatingNav">
-    <a href="index.html">Home</a>
-    <a href="/aboutme.html">About Me</a>
-    <a href="/cats.html">Cats</a>
-    <a href="/chocolates.html">Chocolates</a>
-    <a href="/colonthree.html">:3</a>
-    <a href="/pl1.html">Placeholder</a>
-    <a class="active" href="#">NotFound</a>
-  </div>
-  
-  <script>
-    // Fungsi tombol aksi
-    function a() {
-      window.open("/");
-    }
-    function b() {
-      window.open("/");
-    }
-    function c() {
-      window.location.href = "/";
-    }
-    
-    // Fungsi untuk toggle responsive navbar (jika diperlukan)
-    function toggleNav() {
-      var nav = document.getElementById("myFloatingNav");
-      if (nav.className === "floating-nav") {
-        nav.className += " responsive";
-      } else {
-        nav.className = "floating-nav";
-      }
-    }
-  </script>
+  <nav class="floating-nav" id="myFloatingNav" aria-label="Site">
+    <a href="index.html" class="transition-link">Home</a>
+    <a href="aboutme.html" class="transition-link">About Me</a>
+    <a href="carotene.html" class="transition-link">Carotene</a>
+    <a href="machitan.html" class="transition-link">Machitan</a>
+    <a href="umamusume.html" class="transition-link">Umamusume</a>
+    <a href="hayatab.html" class="transition-link">Hayatab</a>
+  </nav>
+  <script src="script.js"></script>
 </body>
 </html>
