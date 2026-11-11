@@ -30,7 +30,7 @@
 body {
   min-height: 100vh;
   background-color: var(--brown);
-  background-image: url("assets/retro.png");
+  background-image: url("assets/retro.webp");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
